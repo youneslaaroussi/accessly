@@ -1,0 +1,22 @@
+@import './base.css';
+
+/* Compact window styles */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* Ensure drag region for the frameless window */
+body {
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+/* Make interactive elements non-draggable */
+button, input, textarea, select, a {
+  -webkit-app-region: no-drag;
+}
